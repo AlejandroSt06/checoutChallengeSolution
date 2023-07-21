@@ -1,0 +1,382 @@
+body {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 200px;
+}
+
+h1 {
+    text-align: start;
+    display: block;
+    margin-left: 15vw;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4E5150;
+    ;
+
+}
+
+.container form {
+    width: 40%;
+}
+
+.carrello {
+    width: 30%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10px;
+}
+
+.carrello-body {
+    margin-top: 20px;
+    width: 90%;
+    min-width: 300px;
+    background-color: #F2F2F2;
+    height: 85%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    gap: 75px;
+    flex-direction: column;
+
+}
+
+.products-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-width: 300px;
+
+    gap: 40px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100px;
+    width: 70%;
+
+
+    margin-top: 30px
+}
+
+.product img {
+
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+    min-width: 150px;
+    max-width: 150px;
+
+}
+
+.product-description {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 10px;
+
+}
+
+.product-description h2 {
+
+    width: 140px;
+    font-family: Montserrat;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.product-description p {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+.addsub {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #828282;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#333333;
+    ;
+}
+
+.addsub button:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+}
+
+.addsub button {
+    background-color: transparent;
+    transition: all 0, 5s ease-in-out;
+    border: 1px solid #828282;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.addsub button:active {
+    transform: translateY(2px);
+}
+
+.divider {
+    height: 1px;
+    width: 70%;
+    margin: 10px auto;
+    border-bottom: 1px solid #828282;
+    margin-top: 20px;
+}
+
+.price p {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px auto;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    ;
+    color: #333333;
+    ;
+}
+
+.priceCount {
+    color: #333333;
+    ;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+
+}
+
+fieldset {
+    border: none;
+}
+
+form h2,
+form p,
+form input,
+select option {
+
+    font-family: Montserrat;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#duoInput div select option p {
+    color: #828282;
+}
+
+form h2 {
+
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #333333;
+
+}
+
+form input,
+form p {
+    color: #4F4F4F;
+}
+
+form input,
+select {
+    width: 90%;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+    border: 2px solid #828282;
+    border-radius: 10px;
+    outline: none;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+
+    cursor: pointer;
+
+    vertical-align: middle;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #828282;
+    padding: 5px;
+    font-size: 16px;
+    padding: 10px;
+    font-family: Montserrat;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+form p {
+
+    font-size: 12px;
+    line-height: 15px;
+
+
+}
+
+.duoInput {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.duoInput div {
+    width: 90%;
+}
+
+.duoInput div input {
+    width: 80%;
+}
+
+#saveInformation input {
+    display: block;
+    width: 5%;
+    height: 5%;
+    margin-top: 12px;
+}
+
+#saveInformation {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 93%;
+}
+
+#buttonContainer button {
+    background-color: #F2994A;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #F2F2F2;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.scount {
+    color: #F2994A;
+    ;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+@media  screen and (max-width:1080px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container form{
+        width: 90%;
+    }
+    .container .carrello{
+        width: 100%;
+    }
+    h1{
+        margin-left: 5vw;
+    }
+    .products-group{
+        gap:60px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: end;
+    }
+    .product img {
+        min-width: 130px;
+        max-width: 150px;
+        width: 30%;
+        border-radius: 10px;
+        object-fit: cover;
+       
+    
+    }
+    .divider {
+        height: 1px;
+        width: 80%;
+        margin: 10px auto;
+        border-bottom: 1px solid #828282;
+        margin-top: 15px;
+    }
+    .price{
+        margin-bottom: 20px;
+    }
+    .price p {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 10px auto;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        ;
+        color: #333333;
+        ;
+    }
+}

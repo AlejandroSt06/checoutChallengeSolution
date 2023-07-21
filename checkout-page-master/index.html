@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a9c9412ee.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <div class="container">
+        <div class="carrello">
+            <div class="carrello-body">
+
+                <div class="products-group">
+                    <div class="product">
+                        <img src="photo1.png" alt="" style="display: block;">
+                        <div class="product-description">
+                            <h2>Vintage Backbag</h2>
+                            <p><span class = "scount">$54.99</span> $94.99</p>
+                            <div class="addsub">
+                                <button class = "addButton1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                  </svg></button><div class="count1">1</div><button class = "subButton1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                  </svg></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img src="photo2.png" alt="" style="display: block;">
+                        <div class="product-description">
+                            <h2>Levi Shoes</h2>
+                            <p><span class="scount">$74.99</span> $124.99</p>
+                            <div class="addsub">
+                                <button class = "addButton2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                  </svg></button><div class="count2">1</div><button class = "subButton2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                  </svg></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <div class="divider"></div>
+                    <p>Shipping <span class="priceCount">$19</span></p>
+                    <div class="divider"></div>
+                    <p>Total <span class="priceCount">148,98</span></p>
+                </div>
+            </div>
+        </div>
+        <form action="">
+
+            <fieldset>
+                <h2>Contact Information</h2>
+                <p>E-mail</p>
+               
+                <input type="text" name="" id="" placeholder="Enter your E-mail">
+                
+
+                <p>Phone</p>
+                <input type="text" name="" id="" placeholder="Enter your Phone...">
+            </fieldset>
+
+            <fieldset>
+                <h2>Shipping Adress</h2>
+                <p>Full Name</p>
+                <input type="text" placeholder="Rodney Cotton ">
+
+                <p>Adress</p>
+                <input type="text" placeholder="Via Roma 47">
+
+                <p>City</p>
+                <input type="text" placeholder="Roma">
+
+
+                <div class = "duoInput" >
+                    <div>
+                    <p>Full Name</p>
+                    <select required name="CountrySeletion" id="countrySelection"> 
+
+                        <option selected value="" ><p>Italy</p></option>
+                        <option value=""><p>Spanish</p></option>
+                        <option value=""><p>France</p></option>
+
+
+                    </select>
+                    </div>
+                    <div>
+                    <p>Postal Code</p>
+                    <input type="text" placeholder="e.g. 00153">
+                    </div>
+                </div>
+            </fieldset>
+
+            <div id ="saveInformation"><input type="checkbox" name="" id=""><p>Save this information for the next time</p></div>
+            <div id="buttonContainer"><button>Countinue</button></div>
+        </form>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
